@@ -31,9 +31,7 @@ public class CameraFollow : MonoBehaviour {
 		{
 			Y_ROT = -Y_ROT;
 		}
-		
-		Debug.Log(transform.position.x + ": " + X_ROT+ "," + Y_ROT + "," + Z_ROT);
-		
+				
 		transform.rotation = Quaternion.Euler(new Vector3(X_ROT, Y_ROT, Z_ROT)); 
 	}
 }

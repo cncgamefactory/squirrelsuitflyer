@@ -201,18 +201,6 @@ public class GameLoop : MonoBehaviour {
 			}
 			
 			// [DEBUG] FORCES ON GUY
-			if (Input.GetKey(KeyCode.LeftArrow))
-			{
-				Vector3 force = mPlayerForce.force;
-				force.x = -MAX_X_FORCE;
-				mPlayerForce.force = force;
-			}
-			if (Input.GetKey(KeyCode.RightArrow))
-			{
-				Vector3 force = mPlayerForce.force;
-				force.x = MAX_X_FORCE;
-				mPlayerForce.force = force;
-			}
 			if (Input.GetKey(KeyCode.UpArrow))
 			{
 				Vector3 force = mPlayerForce.force;

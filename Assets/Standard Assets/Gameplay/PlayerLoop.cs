@@ -27,6 +27,8 @@ public class PlayerLoop : MonoBehaviour {
 	public int numSpeedBoostersHit = 0;
 	public int numHeightBoostersHit = 0;
 	
+	public float DEBUG_Y_ACCEL = 0; 
+	
 	void Start () 
 	{
 		loop = GameObject.Find("Logic").GetComponent<GameLoop>();
@@ -34,20 +36,42 @@ public class PlayerLoop : MonoBehaviour {
 	
 	void DoBestPlayerInput()
 	{
-		float xPush = Input.acceleration.y * loop.MAX_X_FORCE * .5f;
-		rigidbody.AddRelativeForce(0,0,xPush,ForceMode.VelocityChange);
+		
+		float yAccel = Input.acceleration.y; 
 
-//		Debug.Log("Player Rotation: " + transform.rotation.x + "," + transform.rotation.y + "," + transform.rotation.z); 
+		if (Debug.isDebugBuild)
+		{
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				DEBUG_Y_ACCEL -= .01f; 
+				if (DEBUG_Y_ACCEL < -1)
+						DEBUG_Y_ACCEL = -1;
+				Debug.Log(DEBUG_Y_ACCEL); 
+			}
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				DEBUG_Y_ACCEL += .01f; 
+				if (DEBUG_Y_ACCEL > 1)
+					DEBUG_Y_ACCEL = 1;
+				Debug.Log(DEBUG_Y_ACCEL);
+			}
+
+			yAccel = DEBUG_Y_ACCEL; 			
+		}
 		
-//		transform.RotateAroundLocal(new Vector3(0,.5f,.5f),.2f);
+		float xPush = yAccel * loop.MAX_X_FORCE * .5f;
+		rigidbody.AddForce(xPush,0,0,ForceMode.VelocityChange);
+
+		float X_ROT = Utils.MapRange(Mathf.Abs(transform.position.x), 0, 35, 0, 50);
+		float Y_ROT = 270;
+		float Z_ROT = 45;
 		
-//		float rotSpeed = 100.0f * Input.acceleration.y; 
-		
-//        transform.Rotate(Vector3.up * (Input.acceleration.y * Time.deltaTime), Space.World);
-//        transform.Rotate(new Vector3(0,.5f,.5f) * (rotSpeed * Time.deltaTime), Space.Self);
-		
-		float rotSpeed = .5f * Input.acceleration.y; 
-        transform.RotateAroundLocal(new Vector3(0,.5f,.5f), (rotSpeed * Time.deltaTime));
+		if (transform.position.x < 0)
+		{
+			X_ROT = -X_ROT;
+		}
+						
+		transform.localRotation = Quaternion.Euler(new Vector3(X_ROT, Y_ROT, Z_ROT)); 
 
 		
 	}
