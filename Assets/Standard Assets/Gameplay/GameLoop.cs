@@ -52,12 +52,13 @@ public class GameLoop : MonoBehaviour {
 	private void PopulateTerrain()
 	{
 
-		// pull 3 of the prefabs out to make the first 3 segments. 
-		for (int i = 0; i < 4; i++)
+		// pull prefabs out to make the first few segments. 
+		for (int i = 0; i < 5; i++)
 		{
+			int index = Random.Range(0,TERRAIN_PREFABS.Length-1);
 			Vector3 position = Vector3.zero;
 			position.z = terrainScale * i;
-			Transform newTerrain = Instantiate(TERRAIN_PREFABS[0], position, Quaternion.identity) as Transform;
+			Transform newTerrain = Instantiate(TERRAIN_PREFABS[index], position, Quaternion.identity) as Transform;
 			newTerrain.name = "gen_terrain_" + terrainCounter;
 
 			terrainCounter++;
@@ -98,9 +99,9 @@ public class GameLoop : MonoBehaviour {
 		
 		GenerateMarkers((int)position.z, newTerrain);
 		
-		if (terrainCounter > 4)
+		if (terrainCounter > 5)
 		{
-			GameObject terrainToKill = GameObject.Find("gen_terrain_" + (terrainCounter - 5));
+			GameObject terrainToKill = GameObject.Find("gen_terrain_" + (terrainCounter - 6));
 			Destroy(terrainToKill);
 		}
 	}

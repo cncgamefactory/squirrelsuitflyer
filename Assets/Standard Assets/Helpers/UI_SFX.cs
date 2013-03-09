@@ -10,6 +10,7 @@ public class UI_SFX : MonoBehaviour {
 	public AudioClip SFX_BOING; 
 	public AudioClip SFX_WHISP; 
 	public AudioClip SFX_CHECK; 
+	public AudioClip SFX_DING; 
 	
 	private AudioSource mAudioSrc;
 	

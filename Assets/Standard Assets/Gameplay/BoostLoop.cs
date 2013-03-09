@@ -23,13 +23,11 @@ public class BoostLoop : MonoBehaviour {
 			
 			pLoop.numSpeedBoostersHit++; 
 			
-			for(int i = 0; i < transform.GetChildCount(); i++)
+			for(int i = 0; i < transform.parent.GetChildCount(); i++)
 			{
-				GameObject go = transform.GetChild(i).gameObject;
+				GameObject go = transform.parent.GetChild(i).gameObject;
 				go.renderer.material.color = Color.blue;
 			}
-			
-			UI_SFX.SharedInstance.Play(UI_SFX.SharedInstance.SFX_BOING);
 
 			GA.API.Design.NewEvent("Boost:Speed",transform.position); 
 

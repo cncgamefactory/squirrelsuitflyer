@@ -23,8 +23,6 @@ public class MarkerLoop : MonoBehaviour {
 			
 			pLoop.numHeightBoostersHit++; 
 			
-			UI_SFX.SharedInstance.Play(UI_SFX.SharedInstance.SFX_BOING);
-			
 			GA.API.Design.NewEvent("Boost:Height",transform.position); 
 		}
 	}

@@ -1,1 +1,1 @@
-/Users/iantcummings/Documents/UnityProjects/SquirrelSuitFlyer/wingsuit/Assets/Plugins/iOS/EveryplayGlesSupport.h
+/Users/iantcummings/Documents/UnityProjects/squirrelsuitflyer/Assets/Plugins/iOS/EveryplayGlesSupport.h

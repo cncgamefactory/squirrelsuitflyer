@@ -9,8 +9,6 @@ public class PlayerLoop : MonoBehaviour {
 	public GameObject spdBoost;
 	public GameObject heightBoost;
 	
-	public GameObject[] ArmTrails; 
-	public GameObject[] LegTrails; 
 	public GameObject HeightParticles;
 	
 	private float heightBoostTimer = 0;
@@ -38,18 +36,26 @@ public class PlayerLoop : MonoBehaviour {
 	{
 		
 		float yAccel = Input.acceleration.y; 
-
+		float deviceDamper = .25f;
+			
 		if (Debug.isDebugBuild)
 		{
-			if (Input.GetKey(KeyCode.LeftArrow))
+//			deviceDamper = .25f; 
+			if (Input.GetKey(KeyCode.RightArrow))
 			{
+				if (DEBUG_Y_ACCEL > 0)
+					DEBUG_Y_ACCEL = 0; 
+					
 				DEBUG_Y_ACCEL -= .01f; 
 				if (DEBUG_Y_ACCEL < -1)
 						DEBUG_Y_ACCEL = -1;
 				Debug.Log(DEBUG_Y_ACCEL); 
 			}
-			if (Input.GetKey(KeyCode.RightArrow))
+			if (Input.GetKey(KeyCode.LeftArrow))
 			{
+				if (DEBUG_Y_ACCEL < 0)
+					DEBUG_Y_ACCEL = 0; 
+
 				DEBUG_Y_ACCEL += .01f; 
 				if (DEBUG_Y_ACCEL > 1)
 					DEBUG_Y_ACCEL = 1;
@@ -59,8 +65,8 @@ public class PlayerLoop : MonoBehaviour {
 			yAccel = DEBUG_Y_ACCEL; 			
 		}
 		
-		float xPush = yAccel * loop.MAX_X_FORCE * .5f;
-		rigidbody.AddForce(xPush,0,0,ForceMode.VelocityChange);
+		float xPush = yAccel * loop.MAX_X_FORCE * deviceDamper;
+		rigidbody.AddForce(-xPush,0,0,ForceMode.VelocityChange);
 
 		float X_ROT = Utils.MapRange(Mathf.Abs(transform.position.x), 0, 35, 0, 50);
 		float Y_ROT = 270;
@@ -125,7 +131,7 @@ public class PlayerLoop : MonoBehaviour {
 
 			}			
 			
-			mph = rigidbody.velocity.magnitude * 2.237f * 7;
+			mph = rigidbody.velocity.z * 2.237f * 7;
 			height = transform.position.y;
 			distance = transform.position.z * 10;
 		
@@ -379,12 +385,20 @@ public class PlayerLoop : MonoBehaviour {
 	
 	public void AddHeightBoost(float time)
 	{
-		HandleHeightBoost(true); 
-		heightBoostTimer += time; 
+		// only height boost above 20 m
+		if (transform.position.y < 20)
+		{
+			UI_SFX.SharedInstance.Play(UI_SFX.SharedInstance.SFX_DING);
+			
+			HandleHeightBoost(true); 
+			heightBoostTimer += time; 
+		}
 	}
 	
 	public void AddSpeedBoost(float time)
 	{
+		UI_SFX.SharedInstance.Play(UI_SFX.SharedInstance.SFX_DING);
+		
 		HandleSpeedBoost(true); 
 		speedBoostTimer += time; 
 	}
@@ -409,7 +423,7 @@ public class PlayerLoop : MonoBehaviour {
 		if (enabled)
 		{
 			Bounce (heightBoost);
-			CameraJitter.sharedInstance.ShakeIntensity = .007f;
+			CameraJitter.sharedInstance.ShakeIntensity = .008f;
 		}
 		else
 		{
@@ -424,15 +438,11 @@ public class PlayerLoop : MonoBehaviour {
 
 		if (enabled)
 		{
-			ArmTrails[0].GetComponent<TrailRenderer>().time = .3f;
-			ArmTrails[1].GetComponent<TrailRenderer>().time = .3f;
 			Bounce (spdBoost);
-			CameraJitter.sharedInstance.ShakeIntensity = .02f;
+			CameraJitter.sharedInstance.ShakeIntensity = .01f;
 		}
 		else
 		{
-			ArmTrails[0].GetComponent<TrailRenderer>().time = .15f;
-			ArmTrails[1].GetComponent<TrailRenderer>().time = .15f;
 			CameraJitter.sharedInstance.ShakeIntensity = .004f;
 		}
 		

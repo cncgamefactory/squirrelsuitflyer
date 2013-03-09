@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0748494FB383D5ADCDA9BDCE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC7410DB9EE303FD30E61B2 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08B24F76137BFDFA00FBA309 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B24F75137BFDFA00FBA309 /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		08B24F8A137BFE0700FBA309 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B24F75137BFDFA00FBA309 /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		0A0A4A40AF22713A97D33711 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F434A7299F3B091746AFBEF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		173C40ACB8A280ECD627306E /* Everyplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09634E6C998E73DE64003555 /* Everyplay.framework */; };
-		1C2B47E1BA85F477B8B89B7E /* Everyplay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D155451EAE05CB07FCF7BC3C /* Everyplay.bundle */; };
+		0AC947B5B2650E44E375B281 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19414BACEA0422BFF93C70 /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		142046A09F4C35705EA56CA7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20994B4B9CDA55F5F06E31B6 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		16B74837A3B04FBBDED00AAA /* Everyplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D34EB595051AE9ABEE9A3A /* Everyplay.framework */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF645FDB096F4546B81C27A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3840B280FD54B7D6ABB1E4 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		37AA4CB884AAF8E412144366 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3840B280FD54B7D6ABB1E4 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4D4C4B288C9E6E8B3DE069A4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC24126AD189B43A450F3FA /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2BD642F59A4D2DA46256FDA0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC7410DB9EE303FD30E61B2 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		429B4CC09FAC1A284C2B2E2A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20994B4B9CDA55F5F06E31B6 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4A774C7E9D5668637C163897 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116748229208C193537B3E20 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		567B6256114A9F340000AA1F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82DCFBC0E8000A5005D6AD8 /* MainWindow.xib */; };
 		567B6257114A9F340000AA1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DEA7410EACED0700D8A291 /* Default.png */; };
 		567B6258114A9F340000AA1F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DEA7420EACED0700D8A291 /* Icon.png */; };
@@ -46,12 +47,15 @@
 		56B7961D1442E1C30026B3DD /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B796191442E1B80026B3DD /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		56BCBA390FCF049A0030C3B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */; };
 		56FD43960ED4745200FE3770 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD43950ED4745200FE3770 /* CFNetwork.framework */; };
+		654447BD8F4A51FD53ADE7C6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B19414BACEA0422BFF93C70 /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		659B4FFA9A1BEF577898533D /* Everyplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D34EB595051AE9ABEE9A3A /* Everyplay.framework */; };
 		7F36C11113C5C673007FBDD9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */; };
 		7F36C11213C5C673007FBDD9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */; };
 		7F36C11313C5C673007FBDD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C11013C5C673007FBDD9 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7F36C11413C5C673007FBDD9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */; };
 		7F36C11513C5C673007FBDD9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */; };
 		7F36C11613C5C673007FBDD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C11013C5C673007FBDD9 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7F924488AAE2407B1DB759D9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFF48C0A7312392B3320087 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		830B5C110E5ED4C100C7819F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
 		8358D1B80ED1CC3700E3A684 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */; };
 		83B256E20E62FEA000468741 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B256E10E62FEA000468741 /* OpenGLES.framework */; };
@@ -60,17 +64,14 @@
 		83B2574F0E63025400468741 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B2574E0E63025400468741 /* libiconv.2.dylib */; };
 		83DEA7430EACED0700D8A291 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DEA7410EACED0700D8A291 /* Default.png */; };
 		83DEA7440EACED0700D8A291 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83DEA7420EACED0700D8A291 /* Icon.png */; };
-		8A024984A461F28285880056 /* Everyplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09634E6C998E73DE64003555 /* Everyplay.framework */; };
 		8A2EF43E138549090070AA2F /* iPhone_Profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EF43C138549090070AA2F /* iPhone_Profiler.cpp */; };
 		8A2EF43F138549090070AA2F /* iPhone_Profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EF43C138549090070AA2F /* iPhone_Profiler.cpp */; };
 		8A2EF57A13856A230070AA2F /* iPhone_GlesSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EF57813856A230070AA2F /* iPhone_GlesSupport.cpp */; };
 		8A2EF57B13856A230070AA2F /* iPhone_GlesSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A2EF57813856A230070AA2F /* iPhone_GlesSupport.cpp */; };
-		A28E4A55855F78445C152A40 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4001BC4CE3187936E424 /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		A8FD4F6DBF846D91D3E6187B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0D4901BF0A57DF93CD5A94 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C7794E0D90417603009AFA72 /* Everyplay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D155451EAE05CB07FCF7BC3C /* Everyplay.bundle */; };
-		C87C4C22A534BD7B768EAA1D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC24126AD189B43A450F3FA /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C8B8458EA056E8A5CE08B3EF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0D4901BF0A57DF93CD5A94 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		CCC244B7AED3944E2CA6C722 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B31440DB2F257E1E2E8F301 /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A064421F8E90E0529E2BF624 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFF48C0A7312392B3320087 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C1EF43BCA9D62271C1E30FEA /* Everyplay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0FB64452B78E9B190E432FDF /* Everyplay.bundle */; };
+		C2174C9E8131AF21961AE972 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD84492D86322E65650E878F /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D63942C28DE2865821AC7440 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116748229208C193537B3E20 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D82DCFC10E8000A5005D6AD8 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D82DCFB70E8000A5005D6AD8 /* AppController.mm */; };
 		D82DCFC20E8000A5005D6AD8 /* iPhone_target2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D82DCFB90E8000A5005D6AD8 /* iPhone_target2AppDelegate.m */; };
 		D82DCFC30E8000A5005D6AD8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D82DCFBB0E8000A5005D6AD8 /* main.mm */; };
@@ -98,9 +99,8 @@
 		D8A1C7013E80637F000160D4 /* Icon-144.png in Sources */ = {isa = PBXBuildFile; fileRef = D8A1C7013E80637F100160D4 /* Icon-144.png */; };
 		D8A1C7280E80637F000160D3 /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */; };
 		D8A1C72B0E8063A1000160D3 /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */; };
-		DA984701A8AB7A32ABBAA6BB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B31440DB2F257E1E2E8F301 /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E6534820A2A0F867AD10E3E7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0C4001BC4CE3187936E424 /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		FB3C4F87B07F6D7BD64D2AC3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F434A7299F3B091746AFBEF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DE164EEBB99375D0A0894294 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD84492D86322E65650E878F /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E0E04B73AC8E218440343958 /* Everyplay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0FB64452B78E9B190E432FDF /* Everyplay.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -126,12 +126,12 @@
 
 /* Begin PBXFileReference section */
 		08B24F75137BFDFA00FBA309 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		09634E6C998E73DE64003555 /* Everyplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Everyplay.framework; path = "../../../../everyplay-ios-sdk/Everyplay.framework"; sourceTree = "<group>"; };
-		1D0D4901BF0A57DF93CD5A94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0FB64452B78E9B190E432FDF /* Everyplay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Everyplay.bundle; path = "../../../everyplay-ios-sdk/Everyplay.bundle"; sourceTree = "<group>"; };
+		116748229208C193537B3E20 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SquirrelSuitFlyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquirrelSuitFlyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B31440DB2F257E1E2E8F301 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		4E0C4001BC4CE3187936E424 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		20994B4B9CDA55F5F06E31B6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		51D34EB595051AE9ABEE9A3A /* Everyplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Everyplay.framework; path = "../../../everyplay-ios-sdk/Everyplay.framework"; sourceTree = "<group>"; };
 		567B6273114A9F340000AA1F /* SquirrelSuitFlyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquirrelSuitFlyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5682F4B10F3B34FF007A219C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5692F3DC0FA9D8E500EBA2F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -140,7 +140,7 @@
 		56B796191442E1B80026B3DD /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		56FD43950ED4745200FE3770 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		6F434A7299F3B091746AFBEF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5B19414BACEA0422BFF93C70 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7F36C11013C5C673007FBDD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -158,9 +158,8 @@
 		8A2EF57913856A230070AA2F /* iPhone_GlesSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_GlesSupport.h; sourceTree = "<group>"; };
 		8A2EF5B61385C5F20070AA2F /* iPhone_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Common.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F3840B280FD54B7D6ABB1E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		CCC24126AD189B43A450F3FA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		D155451EAE05CB07FCF7BC3C /* Everyplay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Everyplay.bundle; path = "../../../../everyplay-ios-sdk/Everyplay.bundle"; sourceTree = "<group>"; };
+		CAC7410DB9EE303FD30E61B2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CD84492D86322E65650E878F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D82DCFB60E8000A5005D6AD8 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Classes/AppController.h; sourceTree = SOURCE_ROOT; };
 		D82DCFB70E8000A5005D6AD8 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = Classes/AppController.mm; sourceTree = SOURCE_ROOT; };
 		D82DCFB80E8000A5005D6AD8 /* iPhone_target2AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhone_target2AppDelegate.h; path = Classes/iPhone_target2AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -193,6 +192,7 @@
 		D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RegisterMonoModules.cpp; path = Libraries/RegisterMonoModules.cpp; sourceTree = SOURCE_ROOT; };
 		D8A1C7250E80637F000160D3 /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterMonoModules.h; path = Libraries/RegisterMonoModules.h; sourceTree = SOURCE_ROOT; };
 		D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiPhone-lib.a"; path = "Libraries/libiPhone-lib.a"; sourceTree = SOURCE_ROOT; };
+		EDFF48C0A7312392B3320087 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,13 +219,13 @@
 				56B7959B1442E0F20026B3DD /* CoreGraphics.framework in Frameworks */,
 				56B7960F1442E1770026B3DD /* CoreMotion.framework in Frameworks */,
 				56B7961A1442E1B80026B3DD /* GameKit.framework in Frameworks */,
-				4D4C4B288C9E6E8B3DE069A4 /* AdSupport.framework in Frameworks */,
-				CCC244B7AED3944E2CA6C722 /* AssetsLibrary.framework in Frameworks */,
-				E6534820A2A0F867AD10E3E7 /* CoreImage.framework in Frameworks */,
-				FB3C4F87B07F6D7BD64D2AC3 /* MessageUI.framework in Frameworks */,
-				C8B8458EA056E8A5CE08B3EF /* Security.framework in Frameworks */,
-				1DF645FDB096F4546B81C27A /* StoreKit.framework in Frameworks */,
-				8A024984A461F28285880056 /* Everyplay.framework in Frameworks */,
+				429B4CC09FAC1A284C2B2E2A /* AdSupport.framework in Frameworks */,
+				C2174C9E8131AF21961AE972 /* AssetsLibrary.framework in Frameworks */,
+				654447BD8F4A51FD53ADE7C6 /* CoreImage.framework in Frameworks */,
+				D63942C28DE2865821AC7440 /* MessageUI.framework in Frameworks */,
+				7F924488AAE2407B1DB759D9 /* Security.framework in Frameworks */,
+				2BD642F59A4D2DA46256FDA0 /* StoreKit.framework in Frameworks */,
+				16B74837A3B04FBBDED00AAA /* Everyplay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +252,13 @@
 				56B7959E1442E0FF0026B3DD /* CoreGraphics.framework in Frameworks */,
 				56B795C21442E1100026B3DD /* CoreMotion.framework in Frameworks */,
 				56B7961D1442E1C30026B3DD /* GameKit.framework in Frameworks */,
-				C87C4C22A534BD7B768EAA1D /* AdSupport.framework in Frameworks */,
-				DA984701A8AB7A32ABBAA6BB /* AssetsLibrary.framework in Frameworks */,
-				A28E4A55855F78445C152A40 /* CoreImage.framework in Frameworks */,
-				0A0A4A40AF22713A97D33711 /* MessageUI.framework in Frameworks */,
-				A8FD4F6DBF846D91D3E6187B /* Security.framework in Frameworks */,
-				37AA4CB884AAF8E412144366 /* StoreKit.framework in Frameworks */,
-				173C40ACB8A280ECD627306E /* Everyplay.framework in Frameworks */,
+				142046A09F4C35705EA56CA7 /* AdSupport.framework in Frameworks */,
+				DE164EEBB99375D0A0894294 /* AssetsLibrary.framework in Frameworks */,
+				0AC947B5B2650E44E375B281 /* CoreImage.framework in Frameworks */,
+				4A774C7E9D5668637C163897 /* MessageUI.framework in Frameworks */,
+				A064421F8E90E0529E2BF624 /* Security.framework in Frameworks */,
+				0748494FB383D5ADCDA9BDCE /* StoreKit.framework in Frameworks */,
+				659B4FFA9A1BEF577898533D /* Everyplay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +301,14 @@
 				56B7959A1442E0F20026B3DD /* CoreGraphics.framework */,
 				56B795C11442E1100026B3DD /* CoreMotion.framework */,
 				56B796191442E1B80026B3DD /* GameKit.framework */,
-				CCC24126AD189B43A450F3FA /* AdSupport.framework */,
-				3B31440DB2F257E1E2E8F301 /* AssetsLibrary.framework */,
-				4E0C4001BC4CE3187936E424 /* CoreImage.framework */,
-				6F434A7299F3B091746AFBEF /* MessageUI.framework */,
-				1D0D4901BF0A57DF93CD5A94 /* Security.framework */,
-				9F3840B280FD54B7D6ABB1E4 /* StoreKit.framework */,
-				09634E6C998E73DE64003555 /* Everyplay.framework */,
-				D155451EAE05CB07FCF7BC3C /* Everyplay.bundle */,
+				20994B4B9CDA55F5F06E31B6 /* AdSupport.framework */,
+				CD84492D86322E65650E878F /* AssetsLibrary.framework */,
+				5B19414BACEA0422BFF93C70 /* CoreImage.framework */,
+				116748229208C193537B3E20 /* MessageUI.framework */,
+				EDFF48C0A7312392B3320087 /* Security.framework */,
+				CAC7410DB9EE303FD30E61B2 /* StoreKit.framework */,
+				51D34EB595051AE9ABEE9A3A /* Everyplay.framework */,
+				0FB64452B78E9B190E432FDF /* Everyplay.bundle */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -446,7 +446,7 @@
 				D82DCFC40E8000A5005D6AD8 /* MainWindow.xib in Resources */,
 				83DEA7430EACED0700D8A291 /* Default.png in Resources */,
 				83DEA7440EACED0700D8A291 /* Icon.png in Resources */,
-				1C2B47E1BA85F477B8B89B7E /* Everyplay.bundle in Resources */,
+				C1EF43BCA9D62271C1E30FEA /* Everyplay.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +457,7 @@
 				567B6256114A9F340000AA1F /* MainWindow.xib in Resources */,
 				567B6257114A9F340000AA1F /* Default.png in Resources */,
 				567B6258114A9F340000AA1F /* Icon.png in Resources */,
-				C7794E0D90417603009AFA72 /* Everyplay.bundle in Resources */,
+				E0E04B73AC8E218440343958 /* Everyplay.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,7 +556,7 @@ armv7
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../../everyplay-ios-sdk\"",
+					"\"$(SRCROOT)/../../../everyplay-ios-sdk\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -599,7 +599,7 @@ armv7
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../../everyplay-ios-sdk\"",
+					"\"$(SRCROOT)/../../../everyplay-ios-sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Classes/iPhone_target_Prefix.pch;
@@ -641,7 +641,7 @@ armv7
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../../everyplay-ios-sdk\"",
+					"\"$(SRCROOT)/../../../everyplay-ios-sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Classes/iPhone_target_Prefix.pch;
@@ -678,7 +678,7 @@ armv7
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../../everyplay-ios-sdk\"",
+					"\"$(SRCROOT)/../../../everyplay-ios-sdk\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -715,7 +715,7 @@ armv7
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../../everyplay-ios-sdk\"",
+					"\"$(SRCROOT)/../../../everyplay-ios-sdk\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
@@ -746,7 +746,7 @@ armv7
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../../everyplay-ios-sdk\"",
+					"\"$(SRCROOT)/../../../everyplay-ios-sdk\"",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;

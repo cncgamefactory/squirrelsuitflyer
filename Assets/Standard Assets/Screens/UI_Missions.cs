@@ -126,9 +126,9 @@ public class UI_Missions : MonoBehaviour {
 		prevm2Btn.transform.localPosition = placement2;
 		prevm3Btn.transform.localPosition = placement3;
 		
-		m1Btn.transform.localPosition = new Vector3(placement1.x+30,placement1.y, placement1.z);
-		m2Btn.transform.localPosition = new Vector3(placement2.x+30,placement2.y, placement2.z);
-		m3Btn.transform.localPosition = new Vector3(placement3.x+30,placement3.y, placement3.z);
+		m1Btn.transform.localPosition = new Vector3(placement1.x+50,placement1.y, placement1.z);
+		m2Btn.transform.localPosition = new Vector3(placement2.x+50,placement2.y, placement2.z);
+		m3Btn.transform.localPosition = new Vector3(placement3.x+50,placement3.y, placement3.z);
 		secondsToWait = .5f;
 
 		transform.Find("btn_Okay").gameObject.active = false; 		
